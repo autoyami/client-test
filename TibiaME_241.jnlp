@@ -47,24 +47,20 @@
 		<nativelib href="tibiame_ng_web_241.macosx_x64.jar" />
 	</resources>
 
-	<applet-desc 
-	     name="TibiaME"
-	     main-class="com.cipsoft.tibiame.TibiaMeApplet"
-	     width="640" height="360">
-		<param name="separate_jvm" value="true" />
-		<param name="terminalType" value="10" />
-		<param name="keyMethod" value="1" />
-		<param name="touchMethod" value="3" />
-		<param name="screenX" value="0" />
-		<param name="screenY" value="0" />
-        <param name="maxResolutionHeight" value="1024" />
-        <param name="maxAspectRatio" value="1.6" />
-		<param name="statusBarHeight" value="0" />
-		<param name="bottomBarHeight" value="0" />
-		<param name="statusBarHeightLandscape" value="0" />
-		<param name="bottomBarHeightLandscape" value="0" />
-    <param name="fyberOfferWallUrl" value="https://payments.cipsoft.com/tibiame/" />
-	 </applet-desc>
+	<application-desc main-class="com.cipsoft.tibiame.TibiaMeFrame">
+		<argument>terminalType=10</argument>
+		<argument>keyMethod=1</argument>
+		<argument>touchMethod=3</argument>
+		<argument>screenX=0</argument>
+		<argument>screenY=0</argument>
+		<argument>maxResolutionHeight=1024</argument>
+		<argument>maxAspectRatio=1.6</argument>
+		<argument>statusBarHeight=0</argument>
+		<argument>bottomBarHeight=0</argument>
+		<argument>statusBarHeightLandscape=0</argument>
+		<argument>bottomBarHeightLandscape=0</argument>
+		<argument>fyberOfferWallUrl=https://payments.cipsoft.com/tibiame/</argument>
+	</application-desc>
 
 	<update check="always" policy="always"/>
 </jnlp>
