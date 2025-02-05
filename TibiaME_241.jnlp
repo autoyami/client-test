@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="6.0+" codebase="https://autoyami.github.io/client-test/" href="https://autoyami.github.io/client-test/TibiaME_241.jnlp">
+	<information>
+		<title>Autoyami</title>
+		<vendor>autoyami.xyz</vendor>
+		<homepage href="https://autoyami.github.io/client-test/" />
+		<description kind="one-line">Autoyami MMO</description>
+		<description kind="short">Autoyami MMO</description>
+		<description kind="tooltip">Autoyami MMO</description>
+		<icon href="https://autoyami.github.io/client-test/Icon_small.png"/>
+		<icon kind="splash" href="https://autoyami.github.io/client-test/webclient_loading.gif" />
+		<icon kind="shortcut" href="https://autoyami.github.io/client-test/Icon_large.png" />
+		<shortcut online="true" install="true">
+			<desktop/>
+			<menu submenu="CipSoft GmbH">
+				<menu submenu="TibiaME"/>
+			</menu>
+		</shortcut>
+	</information>
+
+	<security> 
+		<all-permissions/>
+	</security>
+
+	<resources>
+		<j2se version="1.6+"/>
+		<jar href="tibiame_ng_web_241.jar" main="true" />
+	</resources>
+
+	<resources os="Windows" arch="i386 x86">
+		<nativelib href="tibiame_ng_web_241.win.jar" />
+	</resources>
+
+	<resources os="Windows" arch="amd64 x86_64">
+		<nativelib href="tibiame_ng_web_241.win_x64.jar" />
+	</resources>
+
+	<resources os="Linux" arch="i386 x86">
+		<nativelib href="tibiame_ng_web_241.linux.jar" />
+	</resources>
+
+	<resources os="Linux" arch="amd64 x86_64">
+		<nativelib href="tibiame_ng_web_241.linux_x64.jar" />
+	</resources>
+
+	<resources os="Mac OS X" arch="x86_64">
+		<nativelib href="tibiame_ng_web_241.macosx_x64.jar" />
+	</resources>
+
+	<application-desc main-class="com.cipsoft.tibiame.TibiaMeFrame">
+		<argument>terminalType=10</argument>
+		<argument>keyMethod=1</argument>
+		<argument>touchMethod=3</argument>
+		<argument>screenX=0</argument>
+		<argument>screenY=0</argument>
+		<argument>maxResolutionHeight=1024</argument>
+		<argument>maxAspectRatio=1.6</argument>
+		<argument>statusBarHeight=0</argument>
+		<argument>bottomBarHeight=0</argument>
+		<argument>statusBarHeightLandscape=0</argument>
+		<argument>bottomBarHeightLandscape=0</argument>
+		<argument>fyberOfferWallUrl=https://payments.cipsoft.com/tibiame/</argument>
+	</application-desc>
+
+	<update check="always" policy="always"/>
+</jnlp>
